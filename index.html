@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        #logo{
+            width:100%;
+            min-height: 50px;
+            background-color: blue;
+            line-height: 50px;
+            margin-bottom: 10px;
+        }
+        #navigation-bar{
+            width:100%;
+            min-height: 30px;
+            background-color: blue;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #header-banner{
+            width:100%;
+            min-height: 100px;
+            background-color: blue;
+            line-height: 100px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #main{
+            width:100%;
+            
+        }
+        #side-bar{
+            width:20%;
+            min-height: 400px;
+            background-color: blue;
+            float: left;
+            line-height: 400px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #body-area{
+            width:75%;
+            min-height: 400px;
+            background-color: blue;
+            float: right;
+            line-height: 400px;
+            text-align: center;
+        }
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+        #footer{
+            width:100%;
+            min-height: 50px;
+            background-color: blue;
+            line-height: 50px;
+            text-align: center;
+        }
+        #container{
+            width:80%;
+            background-color: orange;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">Logo</div>
+        <div id="navigation-bar">Navigation</div>
+        <div id="header-banner">Header/Banner</div>
+        <div id="main" class="clearfix">
+            <div id="side-bar">Side Bar</div>
+            <div id="body-area">Body Area</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
